@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@media (max-height: 500px) and (orientation: landscape) {
+  main {
+    margin-top: 300px; /* reduzido pra evitar que o conteúdo fique por trás do header */
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  .galeria img {
+    flex: 1 1 120px; /* reduz um pouco pra caber mais imagens lado a lado */
+  }
+}
+
 @media screen and (min-width: 768px) {
   header h1 {
     font-size: 1em;
