@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Galeria Pantera Negra</title>
+                <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+                <link rel="stylesheet" href="style/style.css">
+                <link rel="stylesheet" href="style/media-query.css" >
+</head>
+<body class="pagina-galeria">
+    <header>
+        <img src="imagens/black-panther.png" alt="pantera negra na floresta" class="pantera-img">
+        <h1>Black Panther</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+       <nav id="itens">
+           <ul>
+              <li><a href="index.html" target="_self">HOME PAGE</a></li>
+           </ul>
+       </nav>
+       </header>
+     <main>
+       <div class="galeria">
+           <img src="imagens/pexels-jijo-varghese-56676089-7867206.jpg" alt="">
+            <img src="imagens/pexels-bharath-kumar-venkatesh-1417371218-29037404 - Copia.jpg" alt="">
+            <img src="imagens/pexels-denishan-joseph-2535613-4137250 (1) - Copia.jpg" alt="">
+       </div>
+     </main> 
+      <script>
+        const itens = document.getElementById('itens');
+
+        function mudouTamanho () {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none'; 
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display === 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
+            }
+        }
+        window.addEventListener('resize', mudouTamanho);
+        mudouTamanho();
+    </script>
+    <footer>
+  <p>Créditos das imagens:</p>
+  <ul>
+    <li>Foto por Jijo Varghese - <a href="https://www.pexels.com/photo/7867206/" target="_blank"  rel="noopener noreferrer">Pexels</a></li>
+    <li>Foto por Bharath Kumar Venkatesh - <a href="https://www.pexels.com/photo/29037404/" target="_blank"  rel="noopener noreferrer">Pexels</a></li>
+    <li>Foto por Denishan Joseph - <a href="https://www.pexels.com/photo/4137250/" target="_blank"  rel="noopener noreferrer">Pexels</a></li>
+  </ul>
+</footer>   
+</body>
+</html>

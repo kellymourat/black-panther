@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css" >
+</head>
+<body>
+    <header>
+        <img src="imagens/black-panther.png" alt="pantera negra" class="pantera-img">
+        <h1>Black Panther</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+       <nav id="itens">
+           <ul>
+              <li><a href="index.html">HOME PAGE</a></li>
+              <li><a href="fotos.html">GALLERY</a></li>
+           </ul>
+        </nav>
+       </header>
+    <main>
+        <article class="container">
+              <h2>Pantera Negra Onde a Sombra Ganha Vida</h2>
+               <p>
+                    Em algum ponto distante da floresta, onde a trilha se desfaz e a luz se perde entre galhos entrelaçados, um vulto desliza em silêncio absoluto. A natureza inteira parece prender o ar. Não há canto de ave, nem sussurro de vento. Apenas o peso do mistério pairando. E, ali, quase imperceptível, dois olhos atravessam a escuridão com uma calma ancestral. Não há dúvida: é ela. A pantera negra.
+                </p>
+
+                <p>
+                    Muito além de um simples animal selvagem, a pantera negra é símbolo de tudo o que não se mostra com facilidade: força contida, sabedoria silenciosa, beleza que prefere a sombra. Ela não exige atenção — a impõe. Seu caminhar é poesia crua, sua presença é um aviso velado: há algo aqui que você não compreende totalmente.
+
+                </p>
+
+                <p>
+                    Sua cor não é acaso. Sua invisibilidade é vantagem. Enquanto muitos seres brilham para serem notados, ela se esconde para sobreviver. É predadora e guardiã. É ausência de luz que cria contraste. A pantera negra é o que sobra quando tudo o resto desaparece.
+
+               </p>
+               <p>
+                
+                    Por séculos, povos antigos a veneraram. Algumas a viam como espírito ancestral. Outras, como presságio. Todas, sem exceção, lhe atribuíram respeito. Não pelo medo, mas pela certeza de que algo maior habita aquele olhar calado.
+
+                </p>
+
+                <p>
+
+                   A beleza da Pantera Negra não reside apenas em sua raridade genética, mas não que ela encarna: uma harmonia sublime entre instinto e quietude, entre penumbra e presença. É um lembrete de que a verdadeira força não se ostenta. Ela vigia.
+
+                </p>
+
+                <p>
+                    Este espaço é um convite. Uma abertura simbólica da mata para que você caminhe mais fundo nesse universo silencioso e denso. Não espere respostas fáceis, nem verdades óbvias. Aqui, tudo é sensação, presença, atmosfera.
+
+                </p>
+
+                <p>
+                    A pantera negra não será explicada. Será sentida. Em cada linha. Em cada pausa. Porque ela, mais do que um animal, é a memória viva do que a natureza guarda só para si.
+
+                </p>
+
+                <p>
+
+                   Sinta o peso do seu olhar, e decida se está pronto para segui-la. Mas saiba: quando atravessar essa sombra, você talvez não volte o mesmo. E tudo bem. Algumas sombras existem exatamente para nos revelar.
+
+                <p><i>Black Panther</i></p>   
+        </article>
+    </main> 
+    <script>
+        const itens = document.getElementById('itens');
+        const burguer = document.getElementById('burguer');
+
+        function mudouTamanho() {
+        if (itens) {
+            if (window.innerWidth >= 768) {
+            itens.style.display = 'block';
+            } else {
+            itens.style.display = 'none';
+            }
+        }
+        }
+
+        function clickMenu() {
+        if (itens) {
+            if (itens.style.display == 'block') {
+            itens.style.display = 'none';
+            } else {
+            itens.style.display = 'block';
+            }
+        }
+        }
+        window.addEventListener('resize', mudouTamanho);
+        mudouTamanho();
+    </script>
+    <footer>🐾 Site criado por kelly Moura |<a href="https://github.com/kellymourat" target="_blank"> Acesse perfil GitHub</a>🐾</footer>         
+</body>
+</html>

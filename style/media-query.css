@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 1em;
+  }
+  span#burguer {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  main {
+    max-width: 800px;  /* uso só max-width para flexibilidade */
+    margin-top: 340px;
+    width: 100%;       /* para garantir que encha até 800px */
+  }
+  article > h2 {
+    font-size: 1.2em;
+  }
+  article > p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  .galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .galeria img {
+    flex: 1 1 300px;
+    max-width: 100%;
+  }           
+}
+
+@media screen and (min-width: 1220px) {
+  main {
+    max-width: 800px;  /* mantém a mesma largura máxima */
+    font-size: 1.2em;
+  }
+  article > h2 {
+    font-size: 1.5em;
+  }
+  article > p {
+    font-size: 1.3em;
+  }
+}
+
+
+
+

@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ 
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #1f252c, #717f91, #2b333b);
+  overflow-x: hidden;
+  
+
+}
+
+/* Header fixo com imagem */
+header {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 250px;
+  z-index: 10;
+ 
+}
+
+header > h1 {
+  background-color: #010101;
+  color: white;
+  text-align: center;
+  padding-top: 280px;
+   
+}
+
+span#burguer {
+  background-color: #1f252c;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 4px;
+  cursor: pointer;
+
+}
+span#burguer:hover {
+  background-color: #717f91;
+  color: #1f252c;
+
+
+}
+
+nav {
+  display: none;
+
+}
+
+nav > ul {
+  list-style-type: none;
+
+}
+
+nav > ul > li > a {
+  display: block;
+  padding: 2px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #9faab9;
+  color: white;
+  border-top: 1px solid gray;
+
+}
+
+nav > ul > li > a:hover {
+   background-color: #717f91;
+
+
+}
+
+.pantera-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 100px;
+  height: 300px;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  object-fit: contain; /* para não cortar a imagem */
+  z-index: 1;
+ 
+}
+
+main {
+  font-family: 'sans-serif';
+  max-width: 600px;
+  margin-top: 422px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2em;
+  background-color: rgba(196, 223, 248, 0.925);
+  border-radius: 10px 10px 10px 10px;
+  z-index: 1;
+
+}
+
+.pagina-galeria main {
+  background-color: rgba(1, 1, 1, 0.16);
+  
+}
+
+article > h2 {
+  background-image: linear-gradient(to left, #1f252c28, #3E4F65);
+  font-size: 1.1em;
+  margin: -10px -10px -10px -10px; /*ocupando a parte superior e lateral da box */
+  padding-left: 11px;
+  margin-bottom: 20px;
+ 
+  
+}
+
+article > p {
+  text-align: justify;
+  margin-bottom: 20px;
+  text-indent: 20px;
+  
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Galeria responsiva */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+
+}
+
+.galeria img {
+  flex: 1 1 300px;
+
+}
+
+footer {
+  background-color: #1f252c;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+
+}
+
+footer > a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+footer:hover {
+   background-color: rgb(146, 12, 146);
+
+}
+
+footer >a:hover {
+  color: darkblue;
+
+}
+
+
+   
+
+
+
+
+
+
+
