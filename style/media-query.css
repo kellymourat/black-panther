@@ -2,30 +2,38 @@
 
 /* Media query para telas ≥ 768px */
 @media screen and (min-width: 768px) {
+
   header h1 {
     font-size: 1em;
   }
+
   span#burguer {
     display: none;
   }
+
   nav {
     display: block;
   }
+
   nav > ul > li {
     display: inline-block;
   }
+
   main {
     max-width: 800px;
     margin-top: 340px; /* Valor original para telas maiores */
     width: 100%;
   }
+
   article > h2 {
     font-size: 1.2em;
   }
+
   article > p {
     font-size: 1.2em;
     line-height: 1.5em;
   }
+
   .galeria img {
     flex: 1 1 300px;
     max-width: 48%;
@@ -38,12 +46,15 @@
     max-width: 800px;
     font-size: 1.2em;
   }
+
   article > h2 {
     font-size: 1.5em;
   }
+
   article > p {
     font-size: 1.3em;
   }
+
    .galeria img {
     flex: 1 1 120px;
     max-width: 70%;
@@ -54,25 +65,29 @@
 /* Media query para modo paisagem com altura limitada */
 @media screen and (orientation: landscape) and (max-height: 500px) {
   header {
-    height: 150px; /* Altura menor para caber na tela */
+    height: 180px; /* Altura menor para caber na tela */
   }
+
   .pantera-img {
-    max-height: 60vh; /* Imagem bem menor para evitar sobreposição */
-    max-width: 60%;
-    padding-bottom: 45px;
+    max-height: 47vh; /* Imagem bem menor para evitar sobreposição */
+    max-width: 32%;
+    padding-bottom: 60px;
   }
+
   header > h1 {
     padding: 50px; /* Reduzido para economizar espaço */
     font-size: 1em;
     text-align: left;
       
   }
+
   main {
     margin-top: 160px; /* Espaço suficiente para o conteúdo */
   }
+
   .galeria img {
     flex: 1 1 120px;
-    max-width: 30%;
+    max-width: 20%;
   }
 }
 
