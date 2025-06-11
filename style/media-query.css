@@ -1,17 +1,6 @@
 @charset "UTF-8";
 
-@media (max-height: 500px) and (orientation: landscape) {
-  main {
-    margin-top: 300px; /* reduzido pra evitar que o conteúdo fique por trás do header */
-    font-size: 1em;
-    padding: 8px;
-  }
-
-  .galeria img {
-    flex: 1 1 120px; /* reduz um pouco pra caber mais imagens lado a lado */
-  }
-}
-
+/* Media query para telas ≥ 768px */
 @media screen and (min-width: 768px) {
   header h1 {
     font-size: 1em;
@@ -26,9 +15,9 @@
     display: inline-block;
   }
   main {
-    max-width: 800px;  /* uso só max-width para flexibilidade */
-    margin-top: 340px;
-    width: 100%;       /* para garantir que encha até 800px */
+    max-width: 800px;
+    margin-top: 340px; /* Valor original para telas maiores */
+    width: 100%;
   }
   article > h2 {
     font-size: 1.2em;
@@ -37,20 +26,16 @@
     font-size: 1.2em;
     line-height: 1.5em;
   }
-  .galeria {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   .galeria img {
     flex: 1 1 300px;
-    max-width: 100%;
-  }           
+    max-width: 48%;
+  }
 }
 
+/* Media query para telas ≥ 1220px */
 @media screen and (min-width: 1220px) {
   main {
-    max-width: 800px;  /* mantém a mesma largura máxima */
+    max-width: 800px;
     font-size: 1.2em;
   }
   article > h2 {
@@ -61,6 +46,29 @@
   }
 }
 
-
+/* Media query para modo paisagem com altura limitada */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  header {
+    height: 150px; /* Altura menor para caber na tela */
+  }
+  .pantera-img {
+    max-height: 60vh; /* Imagem bem menor para evitar sobreposição */
+    max-width: 60%;
+    padding-bottom: 45px;
+  }
+  header > h1 {
+    padding: 50px; /* Reduzido para economizar espaço */
+    font-size: 1em;
+    text-align: left;
+      
+  }
+  main {
+    margin-top: 160px; /* Espaço suficiente para o conteúdo */
+  }
+  .galeria img {
+    flex: 1 1 120px;
+    max-width: 30%;
+  }
+}
 
 
